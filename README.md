@@ -2,8 +2,9 @@
 ### Implementation of a small compiler
 #### The grammar is as follows:
 
-#### program		->	var_section body
-#### var_section	->	id_list SEMICOLON
+```
+program		->	var_section body
+var_section	->	id_list SEMICOLON
 id_list		->	ID COMMA id_list | ID
 body		->	LBRACE stmt_list RBRACE
 stmt_list	->	stmt stmt_list | stmt
@@ -24,3 +25,4 @@ for_stmt	->	FOR LPAREN assign_stmt condition SEMICOLON assign_stmt RPAREN body
 case_list	->	case case_list | case
 case		->	CASE NUM COLON BODY
 default_case->	DEFAULT COLON BODY
+```
