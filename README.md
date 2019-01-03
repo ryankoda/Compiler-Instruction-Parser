@@ -1,6 +1,6 @@
 # Compiler/Instruction Parser
 ### Implementation of a small compiler
-#### The grammar is as follows:
+### The grammar is as follows:
 
 ```
 program		->	var_section body
